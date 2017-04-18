@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-   <h2 data-bind="text: name"> </h2>
-   <h3 data-bind="text: title"></h3>
-   <div data-bind="text: click"></div>
-   <img src="" alt="cat" data-bind="click: incrementCounter, attr: (src: imgSrc)">
+   <h2 data-bind="text: currentCat().name"> </h2>
+   <h3 data-bind="text: currentCat().title"></h3>
+   <div data-bind="text: currentCat().click"></div>
+   <img src="" alt="cat" data-bind="click: incrementCounter, attr: (src: currentCat().imgSrc)">
    <div>
    <h3>Nick Names:</h3>
    <ul data-bind="foreach: nicknames">
