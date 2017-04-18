@@ -1,12 +1,8 @@
-var viewModel = function() {
+var cats = function() {
 	this.click = ko.observable(0);
 	this.name = ko.observable('Win');
-	this.imgSrc = ko.observable('url');
+	this.imgSrc = ko.observable('https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg');
   this.nicknames = ko.observable(['A', 'B', 'C', 'D']);
-
-	this.incrementCounter = function() {
-		this.count(this.count() + 1)
-};
 
 	this.title = ko.computed(function() {
 		var title;
@@ -21,8 +17,16 @@ var viewModel = function() {
 			title = 'ninja';
 		};
 		return title;
-	});
+	},this);
 });
+
+
+var viewModel = funtion(){
+	//store cat in current cat variable 
+	this.currentCat = ko.oberservable();
+	this.incrementCounter = function() {
+	this.currentCat.count(this.currentCat.count() + 1)
+};
 
 ko.applyBindings(new viewModel());
 
