@@ -2,7 +2,7 @@ var cats = function() {
 	this.click = ko.observable(0);
 	this.name = ko.observable('Win');
 	this.imgSrc = ko.observable('https://s-media-cache-ak0.pinimg.com/736x/07/c3/45/07c345d0eca11d0bc97c894751ba1b46.jpg');
-  this.nicknames = ko.observable(['A', 'B', 'C', 'D']);
+  this.nicknames = ko.observableArray(['A', 'B', 'C', 'D']);
 
 	this.title = ko.computed(function() {
 		var title;
