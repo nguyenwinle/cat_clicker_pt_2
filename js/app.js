@@ -23,7 +23,7 @@ var cats = function() {
 
 var viewModel = funtion(){
 	//store cat in current cat variable 
-	this.currentCat = ko.oberservable();
+	this.currentCat = ko.oberservable(new cats());
 	this.incrementCounter = function() {
 	this.currentCat.count(this.currentCat.count() + 1)
 };
