@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Udacity Hut</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+   <h2 data-bind="text: name"> </h2>
+   <h3 data-bind="text: title"></h2>
+   <div data-bind="text: click"></div>
+   <img src="" alt="cat" data-bind="click: incrementCounter, attr: (src: imgSrc)">
+   <div>
+   <h3>Nick Names:</h3>
+   <ul data-bind="foreach: nicknames">
+   <li data-bind="text: $data"></li>
+   </ul>
+   </div>
+    <script src="js/lib/knockout-3.2.0.js"</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    </body>
+</html>
