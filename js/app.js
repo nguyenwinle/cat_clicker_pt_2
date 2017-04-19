@@ -31,7 +31,7 @@ var viewModel = funtion(){
   	nicknames: ko.observableArray(['A', 'B', 'C', 'D'])
 	}));
 	this.incrementCounter = function() {
-	self.currentCat.count(self.currentCat.count() + 1)
+	self.currentCat().count(self.currentCat().count() + 1)
 };
 
 ko.applyBindings(new viewModel());
