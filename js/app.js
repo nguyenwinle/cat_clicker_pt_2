@@ -54,7 +54,7 @@ var cats = function(data) {
 });
 
 
-var viewModel = funtion(){
+var viewModel = function(){
 	var self = this;
 	//store cat in current cat variable 
 	this.catList = ko.observableArray([]);
