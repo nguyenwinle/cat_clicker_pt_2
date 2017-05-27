@@ -73,12 +73,3 @@ var viewModel = function(){
 });
 
 ko.applyBindings(new viewModel());
-
-function appView(){
-	var self = this;
-	this.firstName = ko.observable('');
-	this.lastName = ko.observable('');
-	this.fullName = ko.computed(function(){
-		return this.firstName + "" + this.lastName;
-	)};
-};
